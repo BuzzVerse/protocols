@@ -1,6 +1,9 @@
+#ifndef PACKET_H
+#define PACKET_H
+
 #include <stdint.h>
 
-#define DATA_SIZE 59
+#define DATA_SIZE 3
 #define META_DATA_SIZE 5
 #define PACKET_SIZE (DATA_SIZE + META_DATA_SIZE)
 
@@ -19,3 +22,5 @@ typedef struct
     uint8_t dataType;        /**< 1 byte data type */
     uint8_t data[DATA_SIZE]; /**< Data payload */
 } packet_t;
+
+#endif // PACKET_H
