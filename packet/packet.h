@@ -3,9 +3,15 @@
 
 #include <stdint.h>
 
-#define DATA_SIZE 3
+#define DATA_SIZE 59
 #define META_DATA_SIZE 5
 #define PACKET_SIZE (DATA_SIZE + META_DATA_SIZE)
+
+#define PACKET_VERSION_IDX 0
+#define PACKET_ID_IDX 1
+#define PACKET_MSG_ID_IDX 2
+#define PACKET_MSG_COUNT_IDX 3
+#define PACKET_DATA_TYPE_IDX 4
 
 /**
  * @brief Structure representing a LoRa packet.
