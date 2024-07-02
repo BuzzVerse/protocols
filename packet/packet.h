@@ -13,6 +13,15 @@
 #define PACKET_MSG_COUNT_IDX 3
 #define PACKET_DATA_TYPE_IDX 4
 
+typedef enum DataType
+{
+    BME280 = 1,
+    BMA400 = 2,
+    MQ2 = 3,
+    GPS = 4,
+    SMS = 32
+};
+
 /**
  * @brief Structure representing a LoRa packet.
  *
@@ -25,7 +34,7 @@ typedef struct
     uint8_t id;              /**< 4 bits class + 4 bits device ID */
     uint8_t msgID;           /**< 1 byte message ID */
     uint8_t msgCount;        /**< 1 byte message count (optional, can be zero if not used) */
-    uint8_t dataType;        /**< 1 byte data type */
+    enum DataType dataType;  /**< 1 byte data type */
     uint8_t data[DATA_SIZE]; /**< Data payload */
 } packet_t;
 
