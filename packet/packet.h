@@ -19,6 +19,7 @@ typedef enum
     BMA400 = 2,
     MQ2 = 3,
     GPS = 4,
+    STATUS = 5,
     SMS = 32
 } DataType;
 
