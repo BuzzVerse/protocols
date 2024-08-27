@@ -20,6 +20,7 @@ typedef enum
     MQ2 = 3,
     GPS = 4,
     STATUS = 5,
+    BMM150 = 6,
     SMS = 32
 } DataType;
 
