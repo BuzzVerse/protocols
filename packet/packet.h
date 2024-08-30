@@ -1,5 +1,5 @@
-#ifndef PACKET_H
-#define PACKET_H
+#ifndef _PACKET_H_
+#define _PACKET_H_
 
 #include <stdint.h>
 
@@ -40,4 +40,4 @@ typedef struct
     uint8_t data[DATA_SIZE]; /**< Data payload */
 } packet_t;
 
-#endif // PACKET_H
+#endif // _PACKET_H_
